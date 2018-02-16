@@ -22,14 +22,14 @@ cin>>last;
 lucky=first.length();
 lastLetter=last.length()-1;
 
-first[0]=toupper(first[0]);
-last[0]=toupper(last[0]);
-last[lastLetter]=toupper(last[lastLetter]);
-
 nickname.push_back(first[0]);
 nickname.push_back('.');
 nickname.push_back(last[0]);
 nickname.push_back('.');
+
+first[0]=toupper(first[0]);
+last[0]=toupper(last[0]);
+last[lastLetter]=toupper(last[lastLetter]);
 
   //tell fortune
 cout<<"Welcome, "<<nickname<<", here is your fortune..."<<endl;
